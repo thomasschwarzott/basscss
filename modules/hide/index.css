@@ -12,11 +12,11 @@
   .xs-hide { display: none !important }
 }
 
-@media (--breakpoint-sm-md) {
+@media (--breakpoint-sm) {
   .sm-hide { display: none !important }
 }
 
-@media (--breakpoint-md-lg) {
+@media (--breakpoint-md) {
   .md-hide { display: none !important }
 }
 
@@ -24,10 +24,40 @@
   .lg-hide { display: none !important }
 }
 
+@media (--breakpoint-xl) {
+  .xl-hide { display: none !important }
+}
+
+@media (--breakpoint-xxl) {
+  .xxl-hide { display: none !important }
+}
+
+@media (--breakpoint-sm-md) {
+  .sm-md-hide { display: none !important }
+}
+
+@media (--breakpoint-md-lg) {
+  .md-lg-hide { display: none !important }
+}
+
+@media (--breakpoint-lg-xl) {
+  .lg-xl-hide { display: none !important }
+}
+
+@media (--breakpoint-xl-xxl) {
+  .xl-xxl-hide { display: none !important }
+}
+
 .display-none { display: none !important }
 
-@custom-media --breakpoint-xs (max-width: 40em);
-@custom-media --breakpoint-sm-md (min-width: 40em) and (max-width: 52em);
-@custom-media --breakpoint-md-lg (min-width: 52em) and (max-width: 64em);
-@custom-media --breakpoint-lg (min-width: 64em);
+@custom-media --breakpoint-xs-down (max-width: 36em);
+@custom-media --breakpoint-sm (min-width: 36em);
+@custom-media --breakpoint-md (min-width: 48em);
+@custom-media --breakpoint-lg (min-width: 62em);
+@custom-media --breakpoint-xl (min-width: 75em);
+@custom-media --breakpoint-xxl (min-width: 100em);
 
+@custom-media --breakpoint-sm-md (min-width: 36em) and (max-width: 48em);
+@custom-media --breakpoint-md-lg (min-width: 48em) and (max-width: 62em);
+@custom-media --breakpoint-lg-xl (min-width: 62em) and (max-width: 75em);
+@custom-media --breakpoint-xl-xxl (min-width: 75em) and (max-width: 100em);
